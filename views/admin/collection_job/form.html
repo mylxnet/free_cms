@@ -44,20 +44,20 @@
                        value="{{.row.ImagePath}}">
             </div>
         </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">栏目id*</label>
+            <div class="layui-input-block">
+                <input type="text" class="layui-input" lay-verify="article_category_id" name="article_category_id" placeholder=""
+                       value="{{.row.ArticleCategoryId}}">
+            </div>
+        </div>
         <button class="layui-btn layui-btn-normal layui-btn-sm" id="submit" style="display: none" lay-filter="getTo" lay-submit>确定</button>
     </div>
 </form>
 
 <script type="text/javascript">
-    layui.use(['form', 'layer', 'layedit', 'laydate', 'upload'], function () {
-        var form = layui.form
-        layer = parent.layer === undefined ? layui.layer : top.layer,
-            laypage = layui.laypage,
-            upload = layui.upload,
-            layedit = layui.layedit,
-            laydate = layui.laydate,
-            $ = layui.jquery;
-
+    layui.use(['form'], function () {
+        var form = layui.form;
         form.verify({
             name: function (val) {
                 if (val == '') {

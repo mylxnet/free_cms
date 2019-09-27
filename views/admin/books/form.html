@@ -1,5 +1,8 @@
 <style>
-    .book-type p{float:left;width:50%;}
+    .book-type p {
+        float: left;
+        width: 50%;
+    }
 </style>
 <form class="layui-form" action="">
 
@@ -16,13 +19,15 @@
                     <div class="layui-form-item magt3">
                         <label class="layui-form-label">小说名称*</label>
                         <div class="layui-input-block">
-                            <input type="text" class="layui-input book_name" lay-verify="book_name" name="book_name" placeholder="" value="{{.vo.BookName}}">
+                            <input type="text" class="layui-input book_name" lay-verify="book_name" name="book_name"
+                                   placeholder="" value="{{.vo.BookName}}">
                         </div>
                     </div>
                     <div class="layui-form-item">
                         <label class="layui-form-label">列表页地址*</label>
                         <div class="layui-input-block">
-                            <input type="text" class="layui-input list_url" lay-verify="list_url" name="list_url" placeholder="" value="{{.vo.ListUrl}}">
+                            <input type="text" class="layui-input list_url" lay-verify="list_url" name="list_url"
+                                   placeholder="" value="{{.vo.ListUrl}}">
                         </div>
                     </div>
 
@@ -30,7 +35,8 @@
                         <label class="layui-form-label">规则</label>
                         <div class="layui-input-block">
                             {{range $k,$v := .booksPregs}}
-                                <input name="preg_id" title="{{$v.Name}}" value="{{$v.Id}}" type="radio" lay-skin="primary" {{if eq $v.Id $.vo.PregId}}checked{{end}}>
+                                <input name="preg_id" title="{{$v.Name}}" value="{{$v.Id}}" type="radio"
+                                       lay-skin="primary" {{if eq $v.Id $.vo.PregId}}checked{{end}}>
                             {{end}}
                         </div>
                     </div>
@@ -38,7 +44,8 @@
                     <div class="layui-form-item">
                         <label class="layui-form-label">作者</label>
                         <div class="layui-input-block">
-                            <input type="text" class="layui-input book_author" name="book_author" placeholder="" value="{{.vo.BookAuthor}}">
+                            <input type="text" class="layui-input book_author" name="book_author" placeholder=""
+                                   value="{{.vo.BookAuthor}}">
                         </div>
                     </div>
 
@@ -48,7 +55,8 @@
                             <div class="layui-upload">
                                 <button class="layui-btn" id="book_img_upload" type="button">上传封面</button>
                                 <div class="layui-upload-list">
-                                    <img class="layui-upload-img" id="book_img" style="max-width:200px;" src="{{.vo.BookImg}}">
+                                    <img class="layui-upload-img" id="book_img" style="max-width:200px;"
+                                         src="{{.vo.BookImg}}">
                                     <input type="hidden" name="book_img" class="book_img" value="{{.vo.BookImg}}">
                                     <p id="book_img_text"></p>
                                 </div>
@@ -59,7 +67,8 @@
                     <div class="layui-form-item">
                         <label class="layui-form-label">描述</label>
                         <div class="layui-input-block">
-                            <textarea placeholder="请输入内容" class="layui-textarea book_describe" name="book_describe">{{.vo.BookDescribe}}</textarea>
+                            <textarea placeholder="请输入内容" class="layui-textarea book_describe"
+                                      name="book_describe">{{.vo.BookDescribe}}</textarea>
                         </div>
                     </div>
 
@@ -72,7 +81,8 @@
                     <div class="border category">
                         <div class="book-type clearfix">
                             {{range $k,$v := .bookType}}
-                                <p><input type="radio" name="book_type" title="{{$v}}" lay-skin="primary" value="{{$k}}" {{if eq $k $.vo.BookType}}checked{{end}}/></p>
+                                <p><input type="radio" name="book_type" title="{{$v}}" lay-skin="primary" value="{{$k}}"
+                                          {{if eq $k $.vo.BookType}}checked{{end}}/></p>
                             {{end}}
                         </div>
                     </div>
@@ -91,8 +101,10 @@
                         <div class="layui-form-item is_top">
                             <label class="layui-form-label"><i class="seraph icon-zhiding"></i> 置　顶</label>
                             <div class="layui-input-block">
-                                <input type="radio" name="is_top" value="1" title="是" {{if eq 1 .vo.IsTop}}checked{{end}}>
-                                <input type="radio" name="is_top" value="0" title="否" {{if eq 0 .vo.IsTop}}checked{{end}}>
+                                <input type="radio" name="is_top" value="1" title="是"
+                                       {{if eq 1 .vo.IsTop}}checked{{end}}>
+                                <input type="radio" name="is_top" value="0" title="否"
+                                       {{if eq 0 .vo.IsTop}}checked{{end}}>
                             </div>
                         </div>
                     </div>
@@ -104,19 +116,22 @@
                     <div class="layui-form-item">
                         <label class="layui-form-label">seo标题</label>
                         <div class="layui-input-block">
-                            <input type="text" class="layui-input seo_title" name="seo_title" placeholder="" value="{{.vo.SeoTitle}}">
+                            <input type="text" class="layui-input seo_title" name="seo_title" placeholder=""
+                                   value="{{.vo.SeoTitle}}">
                         </div>
                     </div>
                     <div class="layui-form-item">
                         <label class="layui-form-label">seo关键字</label>
                         <div class="layui-input-block">
-                            <input type="text" class="layui-input seo_keyword" name="seo_keyword" placeholder="" {{.vo.SeoKeyword}}>
+                            <input type="text" class="layui-input seo_keyword" name="seo_keyword"
+                                   placeholder="" {{.vo.SeoKeyword}}>
                         </div>
                     </div>
                     <div class="layui-form-item">
                         <label class="layui-form-label">seo描述</label>
                         <div class="layui-input-block">
-                            <textarea placeholder="请输入内容" class="layui-textarea seo_description" name="seo_description">{{.vo.SeoDescription}}</textarea>
+                            <textarea placeholder="请输入内容" class="layui-textarea seo_description"
+                                      name="seo_description">{{.vo.SeoDescription}}</textarea>
                         </div>
                     </div>
                 </div>
@@ -125,18 +140,18 @@
         </div>
     </div>
 
-    <button class="layui-btn layui-btn-normal layui-btn-sm" id="submit" style="display: none" lay-filter="getTo" lay-submit>确定</button>
+    <button class="layui-btn layui-btn-normal layui-btn-sm" id="submit" style="display: none" lay-filter="getTo"
+            lay-submit>确定
+    </button>
 
 </form>
 
 <script>
-    layui.use(['form','layer','layedit','laydate','upload','element'],function(){
+    layui.use(['form', 'layer', 'upload', 'element'], function () {
         var form = layui.form
         layer = parent.layer === undefined ? layui.layer : top.layer,
-            laypage = layui.laypage,
             upload = layui.upload,
-            layedit = layui.layedit,
-            laydate = layui.laydate,
+            element = layui.element,
             $ = layui.jquery;
 
         //普通图片上传
@@ -168,13 +183,13 @@
         });
 
         form.verify({
-            book_name : function(val){
-                if(val == ''){
+            book_name: function (val) {
+                if (val == '') {
                     return "小说名称不能为空";
                 }
             },
-            list_url : function(val){
-                if(val == ''){
+            list_url: function (val) {
+                if (val == '') {
                     return "列表页地址不能为空";
                 }
             }

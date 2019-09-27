@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>小说</title>
+    <title>采集器</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -41,12 +41,9 @@
 <script type="text/javascript" src="/static/plugins/layui/layui.js"></script>
 <script type="text/javascript" src="/static/admin/js/base.js"></script>
 <script>
-    layui.use(['form', 'layer', 'laydate', 'table', 'laytpl'], function () {
-        var form = layui.form,
-            layer = parent.layer === undefined ? layui.layer : top.layer,
+    layui.use(['layer', 'table'], function () {
+        var layer = parent.layer === undefined ? layui.layer : top.layer,
             $ = layui.jquery,
-            laydate = layui.laydate,
-            laytpl = layui.laytpl,
             table = layui.table;
 
         //新闻列表
@@ -58,7 +55,6 @@
             height: "full-125",
             limit: 20,
             limits: [20, 50, 100],
-            id: "jsonTable",
             cols: [[
                 {type: "checkbox", fixed: "left"},
                 {field: 'id', title: 'ID', align: "center", width: 100},
@@ -73,7 +69,6 @@
             ]]
         });
 
-        //搜索【此功能需要后台配合，所以暂时没有动态效果演示】
         $(".search_btn").on("click", function () {
             if ($(".searchVal").val() != '') {
                 table.reload("jsonTable", {

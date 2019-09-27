@@ -41,12 +41,9 @@
 <script type="text/javascript" src="/static/plugins/layui/layui.js"></script>
 <script type="text/javascript" src="/static/admin/js/base.js"></script>
 <script type="text/javascript">
-    layui.use(['form', 'layer', 'laydate', 'table', 'laytpl'], function () {
-        var form = layui.form,
-            layer = parent.layer === undefined ? layui.layer : top.layer,
+    layui.use(['layer','table'], function () {
+        var layer = parent.layer === undefined ? layui.layer : top.layer,
             $ = layui.jquery,
-            laydate = layui.laydate,
-            laytpl = layui.laytpl,
             table = layui.table;
 
         //新闻列表

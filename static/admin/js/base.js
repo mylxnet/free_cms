@@ -3,11 +3,18 @@ layui.use(['form', 'layer', 'table'], function () {
         layer = parent.layer === undefined ? layui.layer : top.layer,
         $ = layui.jquery,
         table = layui.table;
-
+    page = 1;
+    limit = 20;
+    href = "";
 //列表页 json table操作
     table.on('tool(jsonTable)', function (obj) {
         var layEvent = obj.event,
             data = obj.data;
+
+        page = $(".layui-laypage-em").next().html();
+        limit = $(".layui-laypage-limits").find("option:selected").val();
+        href = location.href;
+
         if (layEvent === 'update') { //编辑
             openJump("update?id=" + data.id);
         } else if (layEvent === 'delete') { //删除
@@ -100,16 +107,16 @@ layui.use(['form', 'layer', 'table'], function () {
         // 实际使用时的提交信息
         $.post($(".layui-form").attr("action"), data.field, function (res) {
             setTimeout(function () {
-                top.layer.close(index);
                 top.layer.msg(res.msg);
-                layer.closeAll("iframe");
-                //刷新父页面
-                parent.location.reload();
+                parent.layer.closeAll();
+                parent.tableIns.reload('jsonTable', {
+                    url: parent.href
+                    , where: {"limit": parent.limit, "page": parent.page} //设定异步数据接口的额外参数
+                });
             }, 500);
         });
         return false;
     })
-
 });
 
 
@@ -122,4 +129,16 @@ function formatUnixtimestamp(unixtimestamp) {
     var minute = "0" + unixtimestamp.getMinutes();
     var second = "0" + unixtimestamp.getSeconds();
     return year + "-" + month.substring(month.length - 2, month.length) + "-" + date.substring(date.length - 2, date.length) + " " + hour.substring(hour.length - 2, hour.length) + ":" + minute.substring(minute.length - 2, minute.length) + ":" + second.substring(second.length - 2, second.length);
+}
+
+function getQueryVariable(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] == variable) {
+            return pair[1];
+        }
+    }
+    return (false);
 }
