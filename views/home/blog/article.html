@@ -6,6 +6,7 @@
     <meta name="keywords" content="{{.article.PostKeywords}}"/>
     <meta name="description" content="{{.article.PostDescription}}"/>
     {{template "home/blog/public/head.html" .}}
+    <link rel="stylesheet" href="/static/plugins/editormd/css/editormd.preview.css">
 </head>
 <body>
 <article>
@@ -26,10 +27,7 @@
                     <div class="news_about"><strong>简介</strong>
                         {{.article.PostDescription}}
                     </div>
-                    {{/*<div class="news_infos">*/}}
-                        {{/*{{str2html .article.PostContent}}*/}}
-                    {{/*</div>*/}}
-
+ 
                     <div  class="news_infos" id="wordsView">
                         <textarea style="display:none;" name="editormd-markdown-doc"> {{.article.PostContent}}</textarea>
                     </div>
@@ -82,8 +80,8 @@
 <script src="/static/plugins/editormd/lib/jquery.flowchart.min.js"></script>
 <script src="/static/plugins/editormd/editormd.js"></script>
 <script type="text/javascript">
-    $(document).ready(function () {
-        var wordsView;
+$(function(){
+    var wordsView;
         wordsView = editormd.markdownToHTML("wordsView", {
             htmlDecode: "style,script,iframe",  // you can filter tags decode
             emoji: true,
@@ -91,8 +89,9 @@
             tex: true,  // 默认不解析
             flowChart: true,  // 默认不解析
             sequenceDiagram: true,  // 默认不解析
+
         });
-    })
+});
 </script>
 
 </body>
