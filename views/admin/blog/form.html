@@ -32,29 +32,69 @@
     <div class="layui-form-item">
         <label class="layui-form-label">描述</label>
         <div class="layui-input-block">
-            <textarea name="post_description" class="layui-textarea" placeholder="请输入内容">{{.row.PostDescription}}</textarea>
+            <textarea name="post_description" class="layui-textarea"
+                      placeholder="请输入内容">{{.row.PostDescription}}</textarea>
         </div>
     </div>
 
     <div class="layui-form-item">
         <label class="layui-form-label">内容</label>
         <div class="layui-input-block">
-            <textarea name="post_content" class="layui-textarea" placeholder="请输入内容" id="editor" style="width:100%;height:600px;">{{.row.PostContent}}</textarea>
+            <div id="test-editor">
+                <textarea name="post_content" class="layui-textarea" placeholder="请输入内容" style="display: none;"></textarea>
+            </div>
         </div>
     </div>
 
-    <button class="layui-btn layui-btn-normal layui-btn-sm" id="submit" style="display: none" lay-filter="getTo" lay-submit>确定</button>
+    <button class="layui-btn layui-btn-normal layui-btn-sm" id="submit" style="display: none" lay-filter="getTo"
+            lay-submit>确定
+    </button>
 
 </form>
 
+<!--
 <script type="text/javascript" charset="utf-8" src="/static/plugins/ueditor/ueditor.config.js"></script>
 <script type="text/javascript" charset="utf-8" src="/static/plugins/ueditor/ueditor.all.min.js"> </script>
-<!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
-<!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败
+这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文
 <script type="text/javascript" charset="utf-8" src="/static/plugins/ueditor/lang/zh-cn/zh-cn.js"></script>
 <script>
-    var ue = UE.getEditor('editor');
+var ue = UE.getEditor('editor');
 </script>
+-->
+
+<link rel="stylesheet" href="/static/plugins/editormd/css/editormd.css"/>
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="/static/plugins/editormd/editormd.min.js"></script>
+
+<script>
+    $(function () {
+        var editor = editormd("test-editor", {
+            //width: "100%",
+            //height: "600px",
+            autoHeight : true,
+            path: "/static/plugins/editormd/lib/",
+            markdown: "{{.row.PostContent}}",
+            codeFold: true,
+            saveHTMLToTextarea: true,
+            searchReplace: true,
+            htmlDecode: "style,script,iframe|on*",
+            emoji: true,
+            taskList: true,
+            tocm: true,         // Using [TOCM]
+            tex: true,                   // 开启科学公式TeX语言支持，默认关闭
+            flowChart: true,             // 开启流程图支持，默认关闭
+            sequenceDiagram: true,       // 开启时序/序列图支持，默认关闭,
+            imageUpload: true,
+            imageFormats: ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+            imageUploadURL: "/markdown-upload",
+            onload: function () {
+                console.log('onload', this);
+            }
+        });
+    });
+</script>
+
 
 <script type="text/javascript">
     layui.use(['form', 'layer', 'layedit', 'laydate', 'upload'], function () {
@@ -89,6 +129,5 @@
                 });
             }
         });
-
     })
 </script>

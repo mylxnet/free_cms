@@ -16,6 +16,7 @@ import (
 	"free_cms/controllers/members"
 	"free_cms/controllers/system"
 	"free_cms/controllers/user"
+
 	"github.com/astaxie/beego"
 )
 
@@ -36,6 +37,7 @@ func init() {
 	beego.Router("/main", &index.IndexController{}, "get:Main")
 	beego.Router("/upload", &index.IndexController{}, "*:Upload")
 	beego.Router("/ueditor-upload", &index.IndexController{}, "*:UeditorUpload")
+	beego.Router("/markdown-upload", &index.IndexController{}, "*:MarkdownUpload")
 	beego.Router("/login", &user.UserController{}, "*:Login")
 	beego.Router("/captcha", &user.UserController{}, "*:Captcha")
 	beego.Router("/logout", &user.UserController{}, "get:Logout")
