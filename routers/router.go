@@ -20,6 +20,7 @@ import (
 	"github.com/astaxie/beego"
 )
 
+
 func init() {
 	//前台模块
 	beego.Router("/book", &home.HomeController{}, "get:Index")

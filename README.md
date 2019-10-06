@@ -15,7 +15,7 @@ FreeCms内容管理系统(学习项目),使用工具如下:
 ![avatar](20190621113357.png) ![avatar](20190621113451.png)
 
 #### 安装
-1.克隆到本地src目录
+1.克隆
 
 git clone https://github.com/yangyuanqi/free_cms.git
 

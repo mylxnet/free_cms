@@ -93,6 +93,7 @@ func Page(page, prepage int, nums int64, options map[string]string) (pageStr str
 func Paginator(page, prepage int, nums int64) map[string]interface{} {
 	var firstpage int //前一页地址
 	var lastpage int  //后一页地址
+	showNum := 5     //要显示的页数
 	//根据nums总数，和prepage每页数量 生成分页总数
 	totalpages := int(math.Ceil(float64(nums) / float64(prepage))) //page总数
 	if page > totalpages {
@@ -103,20 +104,21 @@ func Paginator(page, prepage int, nums int64) map[string]interface{} {
 	}
 	var pages []int
 	switch {
-	case page >= totalpages-5 && totalpages > 5: //最后5页
-		start := totalpages - 5 + 1
-		pages = make([]int, 5)
+	case page >= totalpages-int(math.Floor(float64(showNum)/2)) && totalpages > showNum: //最后几页
+		start := totalpages - showNum + 1
+		pages = make([]int, showNum)
 		for i, _ := range pages {
 			pages[i] = start + i
 		}
-	case page >= 3 && totalpages > 5:
-		start := page - 3 + 1
-		pages = make([]int, 5)
+
+	case page >= int(math.Ceil(float64(showNum)/2)) && totalpages > showNum:
+		start := page - int(math.Ceil(float64(showNum)/2)) + 1
+		pages = make([]int, showNum)
 		for i, _ := range pages {
 			pages[i] = start + i
 		}
 	default:
-		pages = make([]int, int(math.Min(5, float64(totalpages))))
+		pages = make([]int, int(math.Min(float64(totalpages), float64(showNum))))
 		for i, _ := range pages {
 			pages[i] = i + 1
 		}

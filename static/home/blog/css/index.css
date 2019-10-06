@@ -86,10 +86,10 @@ h3.blogtitle:hover a { color: #000 }
 .weixin { width: 100%; background: #FFF; border-radius: 10px; overflow: hidden; margin: 20px 0 }
 .weixin img { width: 100%; height: auto }
 /* ��ҳ */
- .am-pagination li{float:left;width:35px;height:35px;    border: 1px solid #ad9e9e;line-height: 35px;margin:0 2px;}
+ .am-pagination li{float:left;min-width:35px;height:35px;    border: 1px solid #ad9e9e;line-height: 35px;margin:0 2px;}
  .am-pagination .active{background-color: #dedede;}
 .am-pagination { text-align: center; color: #666; width: 100%; clear: both; margin: 20px 0; padding-top: 20px }
-.am-pagination a { color: #666; margin: 0 2px;padding: 5px 10px; line-height: 35px;}
+.am-pagination a { color: #666; height:35px; line-height: 35px;display: block;padding:0 5px;min-width: 35px;}
 .am-pagination a:hover { color: #f00; }
 .am-pagination > b { border: 1px solid #000; padding: 5px 10px; }
  .am-pagination .am-active{background-color: #0c89cf;border:1px solid #0c89cf;}
