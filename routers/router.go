@@ -34,7 +34,7 @@ func init() {
 	beego.Router("/article", &home.BlogController{}, "*:Article")
 
 	//后台模块
-	beego.Router("/hhxxttxs", &index.IndexController{}, "get:Admin")
+	beego.Router("/admin", &index.IndexController{}, "get:Admin")
 	beego.Router("/main", &index.IndexController{}, "get:Main")
 	beego.Router("/upload", &index.IndexController{}, "*:Upload")
 	beego.Router("/ueditor-upload", &index.IndexController{}, "*:UeditorUpload")
