@@ -32,5 +32,5 @@ git clone https://github.com/yangyuanqi/free_cms.git
 
 账号:admin 密码:123456  
 
-[小说演示地址](http://book.yyq6.cn/book)  
-[博客演示地址](http://book.yyq6.cn)
+[小说演示地址](http://yyq6.cn/book)  
+[博客演示地址](http://yyq6.cn)

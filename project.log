@@ -14380,3 +14380,171 @@
 2019/10/02 11:56:25.705 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      998.9µs|   match|[44m GET     [0m /static/home/blog/images/like.jpg
 2019/10/02 11:56:25.706 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/blog/images/top.png
 2019/10/02 12:05:11.057 [I] [asm_amd64.s:1357]  http server Running on http://:8000
+2019/10/20 11:12:23.103 [I] [asm_amd64.s:1357]  http server Running on http://:8000
+2019/10/20 11:12:24.096 [D] [server.go:2802]  |            ::1|[42m 200 [0m|    56.0034ms|   match|[44m GET     [0m /     r:/
+2019/10/20 11:12:24.115 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      999.3µs|   match|[44m GET     [0m /static/home/blog/css/base.css
+2019/10/20 11:12:24.117 [D] [server.go:2802]  |            ::1|[42m 200 [0m|          1ms|   match|[44m GET     [0m /static/home/blog/css/index.css
+2019/10/20 11:12:24.120 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.9983ms|   match|[44m GET     [0m /static/home/blog/css/m.css
+2019/10/20 11:12:24.122 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     2.0027ms|   match|[44m GET     [0m /static/home/blog/js/jquery.min.js
+2019/10/20 11:12:24.122 [D] [server.go:2802]  |            ::1|[43m 404 [0m|     1.0025ms| nomatch|[44m GET     [0m /static/upload/20190811/b10eaf41abb78335fe63e5e21aca950a.jpg
+2019/10/20 11:12:24.122 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0025ms|   match|[44m GET     [0m /static/home/blog/images/default-img.png
+2019/10/20 11:12:24.131 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/upload/20190811/bbf5c98a8607e9bd0bc032e2c936bbc3.jpg
+2019/10/20 11:12:24.131 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/upload/20190811/cc0dfa3b7704107bbcd4827f9c97d30b.jpg
+2019/10/20 11:12:24.153 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/upload/20190811/249da935ab68126ec4fa1140d7ec3ab3.jpg
+2019/10/20 11:12:24.153 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/upload/20190811/f4d33f56331a077da6c64a91a340bebc.png
+2019/10/20 11:12:24.160 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0007ms|   match|[44m GET     [0m /static/home/blog/images/newsbg02.png
+2019/10/20 11:12:24.161 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      998.9µs|   match|[44m GET     [0m /static/home/blog/images/newsbg04.png
+2019/10/20 11:12:24.162 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.9972ms|   match|[44m GET     [0m /static/home/blog/images/like.jpg
+2019/10/20 11:12:24.166 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     3.9993ms|   match|[44m GET     [0m /static/home/blog/images/top.png
+2019/10/20 11:12:24.369 [D] [server.go:2802]  |            ::1|[43m 404 [0m|     1.0001ms| nomatch|[44m GET     [0m /favicon.ico
+2019/10/20 11:12:27.273 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     4.0068ms|   match|[44m GET     [0m /admin   r:/admin
+2019/10/20 11:12:27.291 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     2.0008ms|   match|[44m GET     [0m /static/plugins/layui/css/layui.css
+2019/10/20 11:12:27.292 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0002ms|   match|[44m GET     [0m /static/plugins/layui/layui.js
+2019/10/20 11:12:27.294 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     3.9958ms|   match|[44m GET     [0m /static/admin/images/face.jpg
+2019/10/20 11:12:27.294 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     3.9958ms|   match|[44m GET     [0m /static/admin/css/index.css
+2019/10/20 11:12:27.295 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     3.0042ms|   match|[44m GET     [0m /static/admin/js/index.js
+2019/10/20 11:12:27.297 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     3.9983ms|   match|[44m GET     [0m /static/admin/js/cache.js
+2019/10/20 11:12:27.322 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     3.9995ms|   match|[44m GET     [0m /main   r:/main
+2019/10/20 11:12:27.331 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      999.8µs|   match|[44m GET     [0m /static/admin/js/bodyTab.js
+2019/10/20 11:12:27.332 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0006ms|   match|[44m GET     [0m /static/plugins/layui/font/iconfont.woff2
+2019/10/20 11:12:27.336 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0016ms|   match|[44m GET     [0m /static/plugins/layui/lay/modules/form.js
+2019/10/20 11:12:27.342 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      998.2µs|   match|[44m GET     [0m /static/admin/css/public.css
+2019/10/20 11:12:27.343 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.9982ms|   match|[44m GET     [0m /static/admin/js/main.js
+2019/10/20 11:12:27.347 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      999.8µs|   match|[44m GET     [0m /static/plugins/layui/lay/modules/element.js
+2019/10/20 11:12:27.361 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      999.8µs|   match|[44m GET     [0m /static/plugins/layui/lay/modules/layer.js
+2019/10/20 11:12:27.389 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      2.001ms|   match|[44m GET     [0m /static/plugins/layui/lay/modules/jquery.js
+2019/10/20 11:12:27.392 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0012ms|   match|[44m GET     [0m /static/plugins/layui/css/modules/layer/default/layer.css
+2019/10/20 11:12:27.440 [D] [server.go:2802]  |            ::1|[42m 200 [0m|          1ms|   match|[44m GET     [0m /static/admin/json/navs.json
+2019/10/20 11:12:27.464 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0008ms|   match|[44m GET     [0m /main   r:/main
+2019/10/20 11:12:27.465 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     2.0018ms|   match|[44m GET     [0m /static/admin/json/newsList.json
+2019/10/20 11:12:27.465 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      1.001ms|   match|[44m GET     [0m /static/admin/json/userList.json
+2019/10/20 11:12:27.509 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/favicon.ico
+2019/10/20 11:12:30.519 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     4.0053ms|   match|[44m GET     [0m /books-preg/index   r:/books-preg/index
+2019/10/20 11:12:30.771 [D] [server.go:2802]  |            ::1|[42m 200 [0m|    38.9784ms|   match|[44m GET     [0m /static/admin/js/base.js
+2019/10/20 11:12:30.817 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0072ms|   match|[44m GET     [0m /static/plugins/layui/lay/modules/laydate.js
+2019/10/20 11:12:30.818 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     2.9993ms|   match|[44m GET     [0m /static/plugins/layui/lay/modules/table.js
+2019/10/20 11:12:30.828 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0078ms|   match|[44m GET     [0m /static/plugins/layui/css/modules/laydate/default/laydate.css
+2019/10/20 11:12:30.828 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0078ms|   match|[44m GET     [0m /static/plugins/layui/lay/modules/laytpl.js
+2019/10/20 11:12:30.833 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0062ms|   match|[44m GET     [0m /static/plugins/layui/lay/modules/laypage.js
+2019/10/20 11:12:30.839 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0027ms|   match|[44m GET     [0m /static/plugins/layui/lay/modules/util.js
+2019/10/20 11:12:34.825 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      3.998ms|   match|[44m GET     [0m /books/index   r:/books/index
+2019/10/20 11:12:36.868 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0014ms|   match|[44m GET     [0m /static/plugins/layui/css/modules/layer/default/loading-1.gif
+2019/10/20 11:12:36.868 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0014ms|   match|[44m GET     [0m /static/plugins/layui/css/modules/layer/default/icon.png
+2019/10/20 11:12:36.879 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      7.995ms|   match|[44m GET     [0m /books/create   r:/books/create
+2019/10/20 11:12:36.942 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0026ms|   match|[44m GET     [0m /static/plugins/layui/lay/modules/upload.js
+2019/10/20 11:12:54.238 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      1.007ms|   match|[44m GET     [0m /static/plugins/layui/css/modules/layer/default/loading-2.gif
+2019/10/20 11:13:00.103 [D] [server.go:2802]  |            ::1|[42m 200 [0m|    17.9952ms|   match|[44m GET     [0m /     r:/
+2019/10/20 11:13:00.120 [D] [server.go:2802]  |            ::1|[43m 404 [0m|     1.0035ms| nomatch|[44m GET     [0m /static/upload/20190811/b10eaf41abb78335fe63e5e21aca950a.jpg
+2019/10/20 11:13:00.124 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/upload/20190811/bbf5c98a8607e9bd0bc032e2c936bbc3.jpg
+2019/10/20 11:13:00.125 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/upload/20190811/cc0dfa3b7704107bbcd4827f9c97d30b.jpg
+2019/10/20 11:13:00.128 [D] [server.go:2802]  |            ::1|[43m 404 [0m|     1.0014ms| nomatch|[44m GET     [0m /static/upload/20190811/249da935ab68126ec4fa1140d7ec3ab3.jpg
+2019/10/20 11:13:00.136 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/upload/20190811/f4d33f56331a077da6c64a91a340bebc.png
+2019/10/20 11:13:04.257 [D] [server.go:2802]  |            ::1|[42m 200 [0m|    92.9992ms|   match|[44m GET     [0m /book   r:/book
+2019/10/20 11:13:04.270 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/upload/20190430/d1bbe07f35785d2b8479a08477f79376.jpg
+2019/10/20 11:13:04.271 [D] [server.go:2802]  |            ::1|[43m 404 [0m|     1.0004ms| nomatch|[44m GET     [0m /static/upload/20190430/08a16befb37a4d8dcbb9bcaf2bedd255.jpg
+2019/10/20 11:13:04.271 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/upload/20190430/f771f60e110bbd4ac93852a5031c4083.jpg
+2019/10/20 11:13:04.272 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     2.9987ms|   match|[44m GET     [0m /static/plugins/bootstrap/css/bootstrap.css
+2019/10/20 11:13:04.272 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     2.0004ms|   match|[44m GET     [0m /static/home/css/style.css
+2019/10/20 11:13:04.273 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     2.9998ms|   match|[44m GET     [0m /static/home/css/css.css
+2019/10/20 11:13:04.276 [D] [server.go:2802]  |            ::1|[43m 404 [0m|      997.4µs| nomatch|[44m GET     [0m /static/upload/20190430/0c50805fc993784dfa752deec83d5cd5.jpg
+2019/10/20 11:13:04.278 [D] [server.go:2802]  |            ::1|[43m 404 [0m|      995.6µs| nomatch|[44m GET     [0m /static/upload/20190430/f38416587f9008280fc808cc700bf58f.jpg
+2019/10/20 11:13:04.278 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/upload/20190430/5a8c60f5cd64409af4b8b8d3b0512af2.jpg
+2019/10/20 11:13:04.278 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/upload/20190430/959f925a71d40cda4ba1d3d0b31abd48.jpg
+2019/10/20 11:13:04.283 [D] [server.go:2802]  |            ::1|[43m 404 [0m|      997.6µs| nomatch|[44m GET     [0m /static/upload/20190430/dfa4a51fdfc8292e3bdd6f5c9f6b9766.jpg
+2019/10/20 11:13:04.285 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      2.003ms|   match|[44m GET     [0m /static/home/images/book-default.jpg
+2019/10/20 11:13:04.433 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/favicon.ico
+2019/10/20 11:13:08.996 [D] [server.go:2802]  |            ::1|[42m 200 [0m|    10.0013ms|   match|[44m GET     [0m /books/update   r:/books/update
+2019/10/20 11:13:14.892 [D] [server.go:2802]  |            ::1|[42m 200 [0m|    95.0016ms|   match|[44m GET     [0m /book   r:/book
+2019/10/20 11:13:14.908 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/upload/20190430/d1bbe07f35785d2b8479a08477f79376.jpg
+2019/10/20 11:13:14.909 [D] [server.go:2802]  |            ::1|[43m 404 [0m|     1.0027ms| nomatch|[44m GET     [0m /static/upload/20190430/f771f60e110bbd4ac93852a5031c4083.jpg
+2019/10/20 11:13:14.909 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/upload/20190430/0c50805fc993784dfa752deec83d5cd5.jpg
+2019/10/20 11:13:14.910 [D] [server.go:2802]  |            ::1|[43m 404 [0m|      995.3µs| nomatch|[44m GET     [0m /static/upload/20190430/f38416587f9008280fc808cc700bf58f.jpg
+2019/10/20 11:13:14.910 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /static/upload/20190430/5a8c60f5cd64409af4b8b8d3b0512af2.jpg
+2019/10/20 11:13:14.913 [D] [server.go:2802]  |            ::1|[43m 404 [0m|     2.0003ms| nomatch|[44m GET     [0m /static/upload/20190430/959f925a71d40cda4ba1d3d0b31abd48.jpg
+2019/10/20 11:13:14.914 [D] [server.go:2802]  |            ::1|[43m 404 [0m|      999.9µs| nomatch|[44m GET     [0m /static/upload/20190430/dfa4a51fdfc8292e3bdd6f5c9f6b9766.jpg
+2019/10/20 11:13:15.030 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/favicon.ico
+2019/10/20 11:13:18.283 [D] [server.go:2802]  |            ::1|[42m 200 [0m|   1.2811471s|   match|[44m GET     [0m /book/books-list/2569   r:/book/books-list/:id
+2019/10/20 11:13:18.294 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /bookfiles/BookImages/205024.jpg
+2019/10/20 11:13:18.297 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     3.0015ms|   match|[44m GET     [0m /static/home/js/jquery.3.3.1.js
+2019/10/20 11:13:18.323 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     2.9939ms|   match|[44m GET     [0m /static/plugins/bootstrap/js/bootstrap.js
+2019/10/20 11:13:18.323 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.9994ms|   match|[44m GET     [0m /static/home/js/comm.js
+2019/10/20 11:13:18.325 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     4.9931ms|   match|[44m GET     [0m /static/plugins/bootstrap-table/dist/bootstrap-table.js
+2019/10/20 11:13:30.005 [D] [server.go:2802]  |            ::1|[42m 200 [0m|    10.0053ms|   match|[44m GET     [0m /books/update   r:/books/update
+2019/10/20 11:13:56.756 [D] [server.go:2802]  |            ::1|[42m 200 [0m|   395.4083ms|   match|[44m GET     [0m /book/article/2569/3   r:/book/article/:cid/:id
+2019/10/20 11:14:00.702 [D] [server.go:2802]  |            ::1|[42m 200 [0m|   404.9997ms|   match|[44m GET     [0m /book/article/2569/7   r:/book/article/:cid/:id
+2019/10/20 11:14:03.707 [D] [server.go:2802]  |            ::1|[42m 200 [0m|          6ms|   match|[44m GET     [0m /books-preg/update   r:/books-preg/update
+2019/10/20 11:14:03.750 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0008ms|   match|[44m GET     [0m /static/plugins/layui/lay/modules/layedit.js
+2019/10/20 11:14:10.473 [D] [server.go:2802]  |            ::1|[42m 200 [0m|    231.947ms|   match|[44m GET     [0m /book/books-list/2569   r:/book/books-list/:id
+2019/10/20 11:14:10.505 [D] [server.go:2802]  |            ::1|[43m 404 [0m|        985µs| nomatch|[44m GET     [0m /bookfiles/BookImages/205024.jpg
+2019/10/20 11:14:10.590 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/favicon.ico
+2019/10/20 11:14:12.060 [D] [server.go:2802]  |            ::1|[42m 200 [0m|   396.8253ms|   match|[44m GET     [0m /book/article/2569/3   r:/book/article/:cid/:id
+2019/10/20 11:14:16.241 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.9935ms|   match|[44m GET     [0m /static/plugins/bootstrap/css/bootstrap.css.map
+2019/10/20 11:14:28.644 [D] [server.go:2802]  |            ::1|[43m 404 [0m|     1.0009ms| nomatch|[44m GET     [0m /book/books-list/ /bookfiles/BookImages/205024.jpg
+2019/10/20 11:14:28.687 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     3.0004ms|   match|[44m GET     [0m /static/404/js/bodymovin.js
+2019/10/20 11:14:28.691 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      6.999ms|   match|[44m GET     [0m /static/404/js/data.js
+2019/10/20 11:15:20.657 [D] [server.go:2802]  |            ::1|[42m 200 [0m|   662.2926ms|   match|[44m GET     [0m /book/books-list/2569   r:/book/books-list/:id
+2019/10/20 11:15:20.686 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/plugins/bootstrap/css/bootstrap.css
+2019/10/20 11:15:20.686 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/css/style.css
+2019/10/20 11:15:20.687 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      997.7µs|   match|[44m GET     [0m /static/home/css/css.css
+2019/10/20 11:15:20.687 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /bookfiles/BookImages/205024.jpg
+2019/10/20 11:15:20.688 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/js/jquery.3.3.1.js
+2019/10/20 11:15:20.688 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/plugins/bootstrap/js/bootstrap.js
+2019/10/20 11:15:20.701 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/js/comm.js
+2019/10/20 11:15:20.702 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      997.8µs|   match|[44m GET     [0m /static/plugins/bootstrap-table/dist/bootstrap-table.js
+2019/10/20 11:15:20.759 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     2.0006ms|   match|[44m GET     [0m /static/plugins/bootstrap/css/bootstrap.css.map
+2019/10/20 11:15:20.854 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/favicon.ico
+2019/10/20 11:15:46.846 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     6.0005ms|   match|[44m GET     [0m /books-preg/update   r:/books-preg/update
+2019/10/20 11:16:24.080 [D] [server.go:2802]  |            ::1|[43m 404 [0m|      985.8µs| nomatch|[44m GET     [0m /bookfiles/BookImages/205024.jpg
+2019/10/20 11:19:38.306 [D] [server.go:2802]  |            ::1|[42m 200 [0m|   724.5447ms|   match|[44m GET     [0m /book/books-list/2569   r:/book/books-list/:id
+2019/10/20 11:19:38.334 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      999.8µs|   match|[44m GET     [0m /static/plugins/bootstrap/css/bootstrap.css
+2019/10/20 11:19:38.334 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/css/style.css
+2019/10/20 11:19:38.334 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/css/css.css
+2019/10/20 11:19:38.335 [D] [server.go:2802]  |            ::1|[43m 404 [0m|     1.0022ms| nomatch|[44m GET     [0m /bookfiles/BookImages/205024.jpg
+2019/10/20 11:19:38.335 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/js/jquery.3.3.1.js
+2019/10/20 11:19:38.335 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/plugins/bootstrap/js/bootstrap.js
+2019/10/20 11:19:38.348 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0036ms|   match|[44m GET     [0m /static/home/js/comm.js
+2019/10/20 11:19:38.348 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0036ms|   match|[44m GET     [0m /static/plugins/bootstrap-table/dist/bootstrap-table.js
+2019/10/20 11:19:38.408 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.9967ms|   match|[44m GET     [0m /static/plugins/bootstrap/css/bootstrap.css.map
+2019/10/20 11:19:38.504 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/favicon.ico
+2019/10/20 11:19:41.069 [D] [server.go:2802]  |            ::1|[42m 200 [0m|   234.9859ms|   match|[44m GET     [0m /book/books-list/2569   r:/book/books-list/:id
+2019/10/20 11:19:41.098 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      984.3µs|   match|[44m GET     [0m /static/home/css/style.css
+2019/10/20 11:19:41.098 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     2.0006ms|   match|[44m GET     [0m /static/plugins/bootstrap/css/bootstrap.css
+2019/10/20 11:19:41.098 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      984.3µs|   match|[44m GET     [0m /static/home/css/css.css
+2019/10/20 11:19:41.098 [D] [server.go:2802]  |            ::1|[43m 404 [0m|           0s| nomatch|[44m GET     [0m /bookfiles/BookImages/205024.jpg
+2019/10/20 11:19:41.100 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0028ms|   match|[44m GET     [0m /static/plugins/bootstrap/js/bootstrap.js
+2019/10/20 11:19:41.100 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0028ms|   match|[44m GET     [0m /static/home/js/jquery.3.3.1.js
+2019/10/20 11:19:41.108 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0002ms|   match|[44m GET     [0m /static/plugins/bootstrap-table/dist/bootstrap-table.js
+2019/10/20 11:19:41.111 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/js/comm.js
+2019/10/20 11:19:41.180 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0005ms|   match|[44m GET     [0m /static/plugins/bootstrap/css/bootstrap.css.map
+2019/10/20 11:19:41.275 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/favicon.ico
+2019/10/20 11:19:42.538 [D] [server.go:2802]  |            ::1|[42m 200 [0m|   382.8607ms|   match|[44m GET     [0m /book/article/2569/4   r:/book/article/:cid/:id
+2019/10/20 11:19:42.578 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0136ms|   match|[44m GET     [0m /static/plugins/bootstrap/css/bootstrap.css
+2019/10/20 11:19:42.579 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      977.7µs|   match|[44m GET     [0m /static/home/css/style.css
+2019/10/20 11:19:42.580 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/css/css.css
+2019/10/20 11:19:42.581 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      992.8µs|   match|[44m GET     [0m /static/home/js/jquery.3.3.1.js
+2019/10/20 11:19:42.582 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      1.005ms|   match|[44m GET     [0m /static/plugins/bootstrap/js/bootstrap.js
+2019/10/20 11:19:42.583 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      990.3µs|   match|[44m GET     [0m /static/plugins/bootstrap-table/dist/bootstrap-table.js
+2019/10/20 11:19:42.591 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      987.2µs|   match|[44m GET     [0m /static/home/js/comm.js
+2019/10/20 11:19:42.694 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     2.0047ms|   match|[44m GET     [0m /static/plugins/bootstrap/css/bootstrap.css.map
+2019/10/20 11:19:45.092 [D] [server.go:2802]  |            ::1|[42m 200 [0m|   200.9679ms|   match|[44m GET     [0m /book/books-list/2569   r:/book/books-list/:id
+2019/10/20 11:19:45.108 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      998.9µs|   match|[44m GET     [0m /static/plugins/bootstrap/css/bootstrap.css
+2019/10/20 11:19:45.108 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      998.9µs|   match|[44m GET     [0m /static/home/css/style.css
+2019/10/20 11:19:45.108 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      998.9µs|   match|[44m GET     [0m /static/home/css/css.css
+2019/10/20 11:19:45.109 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/js/jquery.3.3.1.js
+2019/10/20 11:19:45.110 [D] [server.go:2802]  |            ::1|[43m 404 [0m|     1.0055ms| nomatch|[44m GET     [0m /bookfiles/BookImages/205024.jpg
+2019/10/20 11:19:45.110 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0055ms|   match|[44m GET     [0m /static/plugins/bootstrap/js/bootstrap.js
+2019/10/20 11:19:45.116 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/plugins/bootstrap-table/dist/bootstrap-table.js
+2019/10/20 11:19:45.120 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      999.4µs|   match|[44m GET     [0m /static/home/js/comm.js
+2019/10/20 11:19:45.184 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      998.4µs|   match|[44m GET     [0m /static/plugins/bootstrap/css/bootstrap.css.map
+2019/10/20 11:20:05.870 [D] [server.go:2802]  |            ::1|[42m 200 [0m|   652.0328ms|   match|[44m GET     [0m /book/books-list/2569   r:/book/books-list/:id
+2019/10/20 11:20:05.894 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/css/style.css
+2019/10/20 11:20:05.895 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     2.0032ms|   match|[44m GET     [0m /static/plugins/bootstrap/css/bootstrap.css
+2019/10/20 11:20:05.896 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/css/css.css
+2019/10/20 11:20:05.896 [D] [server.go:2802]  |            ::1|[43m 404 [0m|      999.3µs| nomatch|[44m GET     [0m /bookfiles/BookImages/205024.jpg
+2019/10/20 11:20:05.897 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0004ms|   match|[44m GET     [0m /static/home/js/jquery.3.3.1.js
+2019/10/20 11:20:05.898 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.0019ms|   match|[44m GET     [0m /static/plugins/bootstrap/js/bootstrap.js
+2019/10/20 11:20:05.910 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/home/js/comm.js
+2019/10/20 11:20:05.910 [D] [server.go:2802]  |            ::1|[42m 200 [0m|           0s|   match|[44m GET     [0m /static/plugins/bootstrap-table/dist/bootstrap-table.js
+2019/10/20 11:20:05.981 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     1.9958ms|   match|[44m GET     [0m /static/plugins/bootstrap/css/bootstrap.css.map
+2019/10/20 11:20:06.087 [D] [server.go:2802]  |            ::1|[42m 200 [0m|      999.2µs|   match|[44m GET     [0m /static/home/favicon.ico
+2019/10/20 11:29:16.129 [D] [server.go:2802]  |            ::1|[42m 200 [0m|     6.0006ms|   match|[44m GET     [0m /books-preg/update   r:/books-preg/update
